@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#63B8FF">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:src="@drawable/qq"
+        android:paddingTop="7dp"
+        android:id="@+id/iv_tool_bar_left"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/tv_tool_bar_middle"
+        android:text="test"
+        android:textSize="15pt"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/tv_tool_bar_right"
+        android:text="test"
+        android:textSize="12pt"/>
+</LinearLayout>
