@@ -174,10 +174,4 @@ public class MainFormActivity extends AppCompatActivity
         transaction.commit();
     }
 
-    @Override
-    protected void onRestart() {
-
-        onCreate(null);
-        super.onRestart();
-    }
 }

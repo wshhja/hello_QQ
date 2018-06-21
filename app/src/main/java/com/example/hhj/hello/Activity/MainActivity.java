@@ -1,8 +1,5 @@
 package com.example.hhj.hello.Activity;
 
-import android.app.Activity;
-import android.app.ActivityManager;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -21,8 +18,6 @@ import com.example.hhj.hello.Model.Message;
 import com.example.hhj.hello.Model.User;
 import com.example.hhj.hello.R;
 import com.example.hhj.hello.utils.SharePUtil;
-
-import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -69,8 +64,8 @@ public class MainActivity extends AppCompatActivity {
                     String name = et_name.getText().toString();
                     String ps = et_ps.getText().toString();
                     UserDAO.Insert(new User(name, ps));
-                    User user=UserDAO.GetByName(name);
-                    FriendList friendList=new FriendList();
+                    User user = UserDAO.GetByName(name);
+                    FriendList friendList = new FriendList();
                     friendList.setUserId(user.getUserId());
                     friendList.setListName("我的好友");
                     FriendListDAO.Insert(friendList);
@@ -94,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
         user.setUserPs("789");
         UserDAO.Insert(user);
 
-        FriendList friendList=new FriendList();
+        FriendList friendList = new FriendList();
         friendList.setUserId(1);
         friendList.setListName("t1");
         FriendListDAO.Insert(friendList);//1
@@ -121,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
         friendList.setListName("t24");
         FriendListDAO.Insert(friendList);//8
 
-        FriendListContent friendListContent=new FriendListContent();
+        FriendListContent friendListContent = new FriendListContent();
         friendListContent.setListId(1);
         friendListContent.setUserId(2);
         FriendListContentDAO.Insert(friendListContent);
